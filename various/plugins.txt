@@ -1,0 +1,10 @@
+codium --install-extension redhat.java
+codium --install-extension redhat.vscode-commons
+codium --install-extension redhat.vscode-microprofile
+codium --install-extension redhat.vscode-quarkus
+codium --install-extension redhat.vscode-xml
+codium --install-extension redhat.vscode-yaml
+codium --install-extension vscjava.vscode-java-debug
+codium --install-extension vscjava.vscode-java-test
+codium --install-extension vscjava.vscode-maven
+

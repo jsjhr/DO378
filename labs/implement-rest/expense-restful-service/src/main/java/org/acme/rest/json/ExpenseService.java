@@ -34,9 +34,4 @@ public class ExpenseService {
         return expenses.stream().anyMatch(exp -> exp.getUuid().equals(uuid));
     }
 
-    @PostConstruct
-    void initData() {
-        expenses.add(new Expense("Groceries", PaymentMethod.CASH, "150.50"));
-        expenses.add(new Expense("Civilization VI", PaymentMethod.DEBIT_CARD, "25.00"));
-    }
 }

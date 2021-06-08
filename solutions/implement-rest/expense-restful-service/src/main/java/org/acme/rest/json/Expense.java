@@ -32,11 +32,6 @@ public class Expense {
         this(UUID.randomUUID(), name, LocalDateTime.now(), paymentMethod, amount);
     }
 
-    @JsonbCreator
-    public static Expense of(String name, PaymentMethod paymentMethod, String amount) {
-        return new Expense(name, paymentMethod, amount);
-    }
-
     public UUID getUuid() {
         return uuid;
     }

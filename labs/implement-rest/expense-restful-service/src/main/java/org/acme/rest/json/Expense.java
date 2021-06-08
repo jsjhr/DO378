@@ -16,14 +16,7 @@ public class Expense {
     private LocalDateTime creationDate;
     private PaymentMethod paymentMethod;
     private BigDecimal amount;
-
-
-    @JsonbCreator
-    public static Expense of(String name, PaymentMethod paymentMethod, String
-    amount) {
-        return new Expense(name, paymentMethod, amount);
-    }
-    
+  
     public Expense(UUID uuid, String name, LocalDateTime creationDate,
             PaymentMethod paymentMethod, String amount) {
         this.uuid = uuid;
